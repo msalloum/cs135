@@ -1,0 +1,32 @@
+{
+  "states": [
+    {
+      "state": "California",
+      "abbreviation":  "CA",
+      "image":  "california.jpg",
+      "capital":"Sacramento",
+      "nickname":"The Golden State"
+    },
+    {
+      "state": "Massachusetts",
+      "abbreviation":  "MA",
+      "image":  "massachusetts.jpg",
+      "capital":"Boston",
+      "nickname":"The Bay State"
+    },
+    {
+      "state": "Texas",
+      "abbreviation":  "TX",
+      "image":  "texas.jpg",
+      "capital":"Austin",
+      "nickname":"The Lone Star State"
+    },
+    {
+      "state": "Iowa",
+      "abbreviation":  "IA",
+      "image":  "iowa.jpg",
+      "capital":"Des Moines",
+      "nickname":"The Hawkeye State"
+    }
+  ]
+}
