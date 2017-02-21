@@ -9,15 +9,6 @@
 <body>
 	<?php print_r($_GET); ?>
 	<h1>Elements Quiz</h1>
-	<?php
-		include("elementarray.php");
-		include("elementfunctions.php");
-
-		if ( isset( $_GET['go'] ) ){
-			createResult($element);
-		}
-		
-		createQuestion($element);
-	?>
+	
 </body>
 </html>
