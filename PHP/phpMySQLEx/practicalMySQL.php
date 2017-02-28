@@ -2,7 +2,7 @@
 
 <?php
   require_once 'login.php';
-  $conn = new mysqli($hn, $un, $pw, $db);
+  $conn = new mysqli(DBHOST, DBUSER, DBPASS, DBNAME);
   if ($conn->connect_error) {
     echo "** ERROR **";
     die($conn->connect_error);

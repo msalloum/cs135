@@ -6,12 +6,13 @@
 	define('DBUSER',"mariam");
 	define('DBPASS',"salloum");
 
-	$connection = new mysqli(DBHOST, DBNAME, DBUSER, DBPASS);
+	$conn = new mysqli(DBHOST, DBUSER, DBPASS, DBNAME);
+
 	if ($conn->connect_error) {
-		$output = "<p>Unable to connect to database </p>" . $error;
+		$output = "<p>Unable to connect to database </p>" . $conn->connect_error;
 		exit($output);
 	} else {
-		$output = "<p>Connected to database </p>" . $error;
+		$output = "<p>Connected to database </p>";
 	}
 	echo $output;
 ?>
