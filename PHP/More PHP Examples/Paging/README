@@ -1,0 +1,32 @@
+Paging Overview
+----------------
+* Choose how many items you want to display on a page.  $itemsPerPage=15;
+* Find out how many items there are total. If the data is stored in a DB, then just do this...
+
+    SELECT COUNT(CountryCode) as count from countries;
+
+* Figure how how many pages there are.  
+
+    if ($count > $itemsPerPage)
+            $pages = ceil( $count / $itemsPerPage );
+    else
+            $pages = 1;
+
+
+What is the query for the first page of items?
+
+	SELECT CountryName, Imports, Exports FROM countries LIMIT 1, 15
+
+
+What is the query for the second page?
+
+	SELECT CountryName, Imports, Exports FROM countries LIMIT 16, 15
+
+
+How can we keep track of where we are??
+
+	Use get variables to figure out where we are.
+
+	Links at the bottom of the page.
+
+		Previous  numbers   Next
